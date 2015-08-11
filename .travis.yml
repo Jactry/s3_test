@@ -6,8 +6,6 @@ cache: apt
 before_script:
   - wget https://dl.dropboxusercontent.com/u/38458267/msys2/msys2-base-i686-20150512-20150805.deb
 
-language: c
-
 compiler:
   - gcc
 
