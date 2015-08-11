@@ -13,14 +13,10 @@ compiler:
 script: 
   - uname -a
 
-before_deploy:
-  - mkdir upload_dir
-  - mv msys2-base-i686-20150512-20150805.deb upload_dir/
-
 deploy:
   provider: s3
   access_key_id: "AKIAIZAKAU64AAM53J7Q"
   secret_access_key: "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"
   bucket: "jactry/msys2"
   skip_cleanup: true
-  local_dir: "upload_dir"
+  local_dir: "msys2-base-i686-20150512-20150805.deb"
